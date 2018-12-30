@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<title style="align:center;">LOGIN PAGE</title>
+<link rel="stylesheet" href="1614092_shubham(css).css">
+<link rel="stylesheet" href="au.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body
+{background-image:url('img1.png');
+ background-repeat:no-repeat;
+ background-size:100% 100%;
+background-position: fixed;}
+
+html{ min-height:100%;
+}
+#a{color:white;
+}
+
+ #c
+ {
+	position:absolute;
+	top:400px;
+	left:1360px;
+	height:20px;
+	width:20px;
+	color:white;
+ }
+
+</style>
+</head>
+
+<body>
+
+<div id="id2"> 
+ <ul>
+ <li><a href="1614092_shuhbam(html code).html"> HOME PAGE</a></li>
+ <li><a href="1614092_shubham(code).html"> RECEPTION COUNTER</a></li>
+  <li><a href="login.html">LOGIN PAGE</a></li>
+ <li><a href="di.html">DOCTOR'S INFO AND TESTS</a></li>
+
+ 
+  <li><a href="aboutus.html">ABOUT US</a></li>
+ </ul>
+ </div>
+<br><br><br><br><br><br>
+
+<center>
+<h1 style="text-align:center; color:white;background-color:black;">LOGIN PAGE</h1>
+
+
+<form  id="myForm" action="/action.php"  target="_blank"  onsubmit="return form_()"  method="POST" autocomplete="on">
+<fieldset>
+<legend align="center"> <strong>Log in</strong></legend>
+<label id="b">e-mail-adress:</label>
+   <input type="text" name="email" id ="Email" placeholder=" Enter your Email">
+   <br><br>
+  <label id="a">password:</label>
+   <input type="password" name="pwd" placeholder="Enter your password">
+   
+   </fieldset>
+   <br>
+   <input type="submit" value="submit">
+    <input type="reset" value="reset">
+</form>
+
+<center>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="1614092_shuhbam(html code).html">home page</a>
+    <a href="1614092_shubham(code).html">reception counter</a>
+	<a href="login.html">login</a>
+	<a href="di.html">doctor's info and tests</a>
+    <a href="aboutus.html">about us</a>
+    
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" id="c" onclick="openNav()"><i class="fa fa-cog fa-spin" style="font-size:48px;color:white"></i> quick access to tabs</span>
+
+ <script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<title >About us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="au.css"></link>
+<link rel="stylesheet" href="1614092_shubham(css).css">
+
+<style>
+
+body
+{	
+	background-image:url('img1.png');
+ background-size:100% 100%;
+ background-repeat:no-repeat;
+background-position: fixed;
+
+}
+
+#a 
+ {
+    text-align:center;
+	height: 40%;
+    width: 40%;
+    background-color: powderblue;
+	align:center;
+	font-size:20px;
+ }
+ 
+#b
+ {
+	color:red;
+ }
+ 
+ #c
+ {
+	position:absolute;
+	top:400px;
+	left:1360px;
+	height:20px;
+	width:20px;
+	color:white;
+ }
+ 
+ #d
+ {
+	position:fixed;
+	top:200px;
+	left:1350px;
+	height:20px;
+	width:60px;
+	
+ }
+
+ 
+ #e
+ {
+	color:white;
+	font-size:25px;
+	
+ }
+ 
+ .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity:0.7;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  white-space: nowrap;
+}
+
+.g {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+ 
+ .g .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+ 
+ .g:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.7;
+}
+ 
+</style>
+</head>
+
+<body>
+
+<div id="id2"> 
+ <ul>
+ <li><a href="1614092_shuhbam(html code).html"> HOME PAGE</a></li>
+ <li><a href="1614092_shubham(code).html"> RECEPTION COUNTER</a></li>
+  <li><a href="login.html">LOGIN PAGE</a></li>
+ <li><a href="di.html">DOCTOR'S INFO AND TESTS</a></li>
+
+ 
+  <li><a href="aboutus.html">ABOUT US</a></li>
+ </ul>
+ </div>
+<br><br><br><br><br><br><br><br>
+<center>
+<h1 style="text-align:center; color:white;background-color:black;">ABOUT US</h1>
+
+<div id="a">
+	<p id="b"><img src="img3.png"  >
+	Parmanand Deepchand Hinduja, Founder, country hospital Foundation believed from his early childhood that health and education 
+	were the fundamental rights of each individual.
+	</p>
+	
+</div>
+<p id="e">This hospital witnesses the saving of more than 10000 patients suffering from such crucial situations at the last moment.
+</p>
+
+<img src="img5.png" height="400px" width="1000px">
+<br><br><br><br>
+<div class="container">
+  <img src="img6.jpg" alt="Avatar" class="image">
+  <br>
+  <div class="overlay">
+    <div class="text">Telephone No. 0251 252522
+	<br>
+	email countryh@gmail.com<br><br>
+	mobile no 9151245783<br><br>
+	Adress Block No A/205, Mohammad Rafiq Marg, 
+	<br>Ulhasnagar No 4, Thane - 421004, 
+	Opposite Saraswati School ,<br>
+	Near Malti Apartment, 
+	Off DEV Samaj Road, 
+	 Netaji Chowk (Map) <br>
+	 <br>Private Hospitals<br>
+Hospitals<br>
+General Physician Doctors<br>
+Piles Doctors<br>
+Doctors For Laparoscopy<br>
+	</div>
+  </div>
+</div>
+</center>
+
+<a href="https://www.google.com/maps/place/Country+Hospital/@26.4019447,80.3657438,17z/data=!3m1!4b1!4m5!3m4!1s0x399c48329a2931bb:0x54a58312cdac79bd!8m2!3d26.4019447!4d80.3679325" id="d"><p class="g"><img src="img4.png" height="50px" width="50px">locate us<span class="tooltiptext">locate us</span></p></a>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="1614092_shuhbam(html code).html">home page</a>
+    <a href="1614092_shubham(code).html">reception counter</a>
+	<a href="login.html">login</a>
+	<a href="di.html">doctor's info and tests</a>
+    <a href="aboutus.html">about us</a>
+    
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" id="c" onclick="openNav()"><i class="fa fa-cog fa-spin" style="font-size:48px;color:white"></i> quick access to tabs</span>
+
+ <script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+</body>
+

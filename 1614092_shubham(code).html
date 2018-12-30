@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<div><head>
+<link rel="stylesheet" href="1614092_shubham(css).css">
+<link rel="stylesheet" href="au.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script>
+
+	function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+	
+	}
+	
+	
+
+function message()
+ {
+  document.getElementById("demo1").src= "img.jpg ";
+  document.getElementById("demo1").height= "400 ";
+   document.getElementById("demo1").width= "400 ";
+   return "let's fill the information";
+}
+
+function form_() 
+	{
+    var x = document.forms["myForm"];
+	var i;
+	for( i=0;i<x.length-17;i++)
+	
+	
+    if (x.elements[i].value == "") 
+	{
+        alert("provide a valid information");
+     return false;   
+    }
+   
+   var x=document.getElementById("zipCode").value;
+	if(/^\d{6}$/.exec(x))
+		x=x;
+	else alert("Enter the valid zip code");
+	
+	var y=document.getElementById("Email").value;
+	if(/^[a-z]+@[a-z]+.[a-z]+$/.exec(y))
+		x=x;
+	else alert("Enter the valid email");
+	
+}
+
+
+document.getElementById("myDIV").addEventListener("click", myFunction);
+
+function myFunction() {
+    document.getElementById("demos").innerHTML =Math.random()*100+ " is your key number";
+}
+</script>
+<title>form</title>
+<style>
+
+fieldset{
+align:center;
+}
+
+
+form {display:table;width:40%;}
+
+label {display:table-cells;}
+input {display:table-cells;}
+
+div.sticky
+{
+  position:sticky;
+  top:0;
+  color:white;
+  background-color:black;
+  font-size:50px;
+  border:2px double yellow;
+}
+
+div.sticky:hover
+{
+ 
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+	
+}
+body{
+ background-image:url('img1.png');
+ background-repeat:no-repeat;
+background-attachment: fixed;
+ background-size:100% 100%;
+}
+
+div.tr{
+ background:linear-gradient(red,yellow,green);
+ opacity:0.9;
+ 
+margin:5%; 
+}
+
+div.tr div{
+ font-weight:;
+}
+
+ #c
+ {
+	position:absolute;
+	top:400px;
+	left:1360px;
+	height:20px;
+	width:20px;
+	color:white;
+ }
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 100;
+  
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+@keyframes example {
+    0%   { left:1300px; top:600px;}
+    
+    50%  { left:1300px; top:650px;}
+    100%{ left:1300px; top:600px;}
+    
+}
+
+</style>
+</head>
+
+<body onload="startTime()" >
+
+<div id="id2"> 
+ <ul>
+ <li><a href="1614092_shuhbam(html code).html"> HOME PAGE</a></li>
+ <li><a href="1614092_shubham(code).html"> RECEPTION COUNTER</a></li>
+  <li><a href="login.html">LOGIN PAGE</a></li>
+ <li><a href="di.html">DOCTOR'S INFO AND TESTS</a></li>
+
+ 
+  <li><a href="aboutus.html">ABOUT US</a></li>
+ </ul>
+ </div>
+<br><br><br><br><br><br>
+
+<center>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img11.png"></button>
+  
+   <div id="txt" align="right"></div>
+<div class="sticky">Registration form and reception form</div><br><br>
+<button onclick="document.getElementById('demo').innerHTML =  message()"><img  src="login.JPG" id="demo1" width="200px" height="200px"></button>
+
+
+<p id="demo">click on image above</p>
+<div class="tr">
+<div>
+<form  id="myForm" action="/action.php"  target="_blank"  onsubmit="return form_()"  method="POST" autocomplete="on"   style="box-shadow:10px 10px 5px grey ;opacity:0.7">
+
+<fieldset >
+ <legend align="center"> <strong>PATIENT'S INFO</strong></legend><br><p>
+ <label> First name</label>:
+  <input type="text" name="finame"  placeholder="First name" ></p><p>
+  
+  <label>Last name</label>:
+  <input type="text" name="lastname" placeholder="last name"></p><p>
+  
+   <label>Gender:</label>
+   <input type="radio" name="gender" value="male">male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other </p><p>
+  <label> Date of Birth:</label>
+  <input type="date" name="dob" placeholder="date of birth"></p><p>
+    <label> age:</label>
+	<input type="number" id="age_" max="150" placeholder="age" required></p>
+	<button onclick="aged()"></button>
+	
+	
+
+   <label> Adress:</label><br>
+   <textarea rows="10" cols="50" placeholder="adress">
+   </textarea></p><p>
+    <label>Zip code:</label>
+	<input type="text" name="zipcode" id="zipCode" placeholder="Zip code" ></p><p>
+   <label>mobile-no:</label>
+   <input type="text" name="mobile"maxlength="10" placeholder="mobile no." ></p><p>
+   <label>e-mail-adress:</label>
+   <input type="text" name="email" id ="Email" placeholder="email"></p><p>
+   <label>password(which you remember at later stages):</label>
+   <input type="password" name="pwd" placeholder="password"></p>
+  </select>
+  </fieldset>
+  <br>
+  <fieldset>
+  <legend align="center"><strong>OTHER INFORMATION:</strong></legend><p>
+  <label>Enter the sickness:</label>
+  <textarea rows="2" cols="40">
+   </textarea></p><p>
+   
+   <label>Need for any home service</label>
+   <select name="need">
+   <option>Ambulance</option>
+   <option>Dressing</option>
+   <option>Any  test</option><br>
+    </select></p><p>
+    <label> any other home service</label>
+   <input type="text" name="service" placeholder="required home service"></p><p>
+  <label> Date for appointment</label>
+  <input type="date" name="date"min="2018-2-4" max="2018-2-28" placeholder="appointment date"></p><p>
+  
+ 
+<input type="text" name="captcha" placeholder="Enter your finalised key" >
+<div id="demos"></div>
+	<br>
+   </fieldset>
+  
+  <input type="submit" value="submit">
+    <input type="reset" value="reset"><center>
+ 
+</form></div></div>
+
+
+<script src="form.js"></script>
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="1614092_shuhbam(html code).html">home page</a>
+    <a href="1614092_shubham(code).html">reception counter</a>
+	<a href="login.html">login</a>
+	<a href="di.html">doctor's info and tests</a>
+    <a href="aboutus.html">about us</a>
+    
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" id="c" onclick="openNav()"><i class="fa fa-cog fa-spin" style="font-size:48px;color:white"></i> quick access to tabs</span>
+
+ <script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+</body>
+
+
+</html>

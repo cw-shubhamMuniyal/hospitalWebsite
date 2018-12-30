@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+<title style="align:center;">DOCTOR'S INFO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="1614092_shubham(css).css">
+<link rel="stylesheet" href="au.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td,td1, i;
+  input = document.getElementById("h");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("mytable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+	td1 = tr[i].getElementsByTagName("td")[1];
+    if (td||td1) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1||td1.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+
+</script>
+
+<style>
+
+
+body{
+background-color:grey;
+opacity:0.7;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 30px 330px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 30px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Style the close button */
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.topright:hover {color: red;}
+
+#a
+{
+	position:absolute;
+	top:300px;
+	left:500px;
+	height:20px;
+}
+
+#b
+{
+	
+	position:absolute;
+	top:300px;
+	left:900px;
+	height:20px;
+}
+
+
+#cs
+{
+	position:absolute;
+	top:500px;
+	left:500px;
+	height:20px;
+}
+
+#d
+{
+	
+	position:absolute;
+	top:500px;
+	left:900px;
+	height:20px;
+}
+
+#e
+{
+	position:absolute;
+	top:700px;
+	left:500px;
+	height:20px;
+}
+
+#f
+{
+	
+	position:absolute;
+	top:700px;
+	left:900px;
+	height:20px;
+}
+
+table, th, td {
+    
+    border: 1px solid black ;
+	border-collapse:collapse;
+	text-align:center;
+	padding:20px;
+}
+
+#h
+{
+	position:absolute;
+	height:30px;
+	width:200px;
+	left:1350px;
+	
+
+}
+
+table, th, td {
+width:60%;
+border:1px solid black;
+}
+
+ #c
+ {
+	position:absolute;
+	top:400px;
+	left:1360px;
+	height:20px;
+	width:20px;
+	color:white;
+ }
+
+</style>
+
+
+
+<body>
+
+<div id="id2"> 
+ <ul>
+ <li><a href="1614092_shuhbam(html code).html"> HOME PAGE</a></li>
+ <li><a href="1614092_shubham(code).html"> RECEPTION COUNTER</a></li>
+  <li><a href="login.html">LOGIN PAGE</a></li>
+ <li><a href="di.html">DOCTOR'S INFO AND TESTS</a></li>
+
+ 
+  <li><a href="aboutus.html">ABOUT US</a></li>
+ </ul>
+ </div>
+<br><br><br><br><br><br>
+
+<center>
+
+<h1 style="text-align:center; color:white;background-color:black;">DOCTOR'S INFO AND TESTS</h1>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><b>DOCTOR'S INFO </b></button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')"><b>TESTS</b></button>
+ 
+</div>
+
+<div id="London" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  
+  <div class="chip" id="a">
+  <p><img src="img8.png" alt="Person" width="96" height="96">
+ 
+<b>Dr. Prabhu Ahuja</b>
+<br>
+MBBS, MS - General Surgery<br>
+General Surgeon</p>
+  
+</div>
+
+<div id="b">
+<p>36 Years experience<br>
+Rs 300 at clinic<br>
+Unavailable today<br>
+MON-SAT 11:00 AM - 03:00 PM
+</p>
+</div>
+
+
+ <div class="chip" id="cs">
+  <p><img src="img8.png" alt="Person" width="96" height="96">
+ 
+<b>
+Dr. Gourav Trivedi</b>
+<br>
+MBBS, Diploma in Psychological Medicine
+<br>
+Psychiatrist</p>
+  
+</div>
+
+<div id="d">
+<p>14  Years experience<br>
+Rs 300 at clinic<br>
+Unavailable today<br>
+ MON 08:00 PM - 10:00 PM
+</p>
+</div>
+
+<div class="chip" id="e">
+  <p><img src="img9.png" alt="Person" width="96" height="96">
+ 
+<b>
+Dr. Asha Ahuja</b>
+<br>
+MBBS, MD - General Medicine
+
+<br>
+General Physician</p>
+  
+</div>
+
+<div id="f">
+<p>34  Years experience<br>
+Rs 300 at clinic<br>
+Unavailable today<br>
+ MON 08:00 PM - 10:00 PM
+</p>
+</div>
+
+</div>
+
+<div id="Paris" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  
+  <input type="text" id="h" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+  
+  
+  <table id="mytable">
+  <tr>
+  <th>category</th><th>Tests</th><th>Prices</th>
+  </tr>
+  <tr> <td rowspan="3">THYROID PROFILE TESTS</td><td>TSH</td><td>1000</td></tr>
+  <tr> <td >Free T3</td><td>1000</td></tr>
+  <tr> <td >Free T4</td><td>1000</td></tr>
+  
+  <tr> <td rowspan="7">LIPID PROFILE TESTS</td><td>TOTAL CHOLESTEROL</td><td>1800</td></tr>
+  <tr> <td >HDL</td><td>9000</td></tr>
+  <tr> <td >LDL</td><td>1400</td></tr>
+  <tr> <td >Non-HDL CHOL</td><td>1000</td></tr>
+  <tr> <td >VLDL</td><td>1090</td></tr>
+  <tr> <td >TRIGLYCERIDES</td><td>1000</td></tr>
+  <tr> <td >TC/HDL</td><td>1030</td></tr>
+	
+  <tr> <td rowspan="8">LIVER PROFILE TESTS</td><td>ALB/GLO RATIO</td><td>1000</td></tr>
+  <tr> <td >BILIRUBIN - TOTAL</td><td>1800</td></tr>
+  <tr> <td >BILIRUBIN - DIRECT</td><td>1000</td></tr>
+  <tr> <td >BILIRUBIN - INDIRECT</td><td>1000</td></tr>
+  <tr> <td >ALKALINE PHOSPHATASE</td><td>1000</td></tr>
+  <tr> <td >PROTEIN - TOTAL</td><td>8000</td></tr>
+  <tr> <td >SERUM GLOBULIN</td><td>15500</td></tr>
+  <tr> <td >SERUM GLOBULIN</td><td>1500</td></tr>
+  
+    <tr> <td rowspan="8">CBC / HEMOGRAM</td><td>HEMOGLOBIN</td><td>1000</td></tr>
+  <tr> <td >TOTAL RBC</td><td>1000</td></tr>
+  <tr> <td >IMMATURE GRANULOCYTES(IG)</td><td>6000</td></tr>
+  <tr> <td >NEUTROPHILS - ABSOLUTE</td><td>1400</td></tr>
+  <tr> <td >MONOCYTES - ABSOLUTE</td><td>4000</td></tr>
+  <tr> <td >EOSINOPHILS</td><td>1000</td></tr>
+  <tr> <td >LYMPHOCYTE PERCENTAGE</td><td>2000</td></tr>
+  <tr> <td >NUCLEATED RBC</td><td>1000</td></tr>
+  
+  </table>
+  
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+
+
+
+</center>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="1614092_shuhbam(html code).html">home page</a>
+    <a href="1614092_shubham(code).html">reception counter</a>
+	<a href="login.html">login</a>
+	<a href="di.html">doctor's info and tests</a>
+    <a href="aboutus.html">about us</a>
+    
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" id="c" onclick="openNav()"><i class="fa fa-cog fa-spin" style="font-size:48px;color:white"></i> quick access to tabs</span>
+
+ <script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+</body>
+</head>
+</html>
